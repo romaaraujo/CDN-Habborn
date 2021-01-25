@@ -61,11 +61,19 @@ function fastfoodClick() {
     
     if(!fastfoodopen) {
         fastfoodopen = true;
-        $("#clientbeta").css('zIndex', '-1');
+        if ($("#clientbeta").length > 0){
+            $("#clientbeta").css('zIndex', '-1');
+        } else {
+            $("#flash-container).css('zIndex', '-1');
+        }
         $("#fastfoodiframe").prop('src', '//habborn.biz/fastfood?ticket='+fastfoodticket); 
     } else {
         fastfoodopen = false;
-        $("#clientbeta").css('zIndex', '1');
+        if ($("#clientbeta").length > 0){
+            $("#clientbeta").css('zIndex', '1');
+        } else {
+            $("#flash-container).css('zIndex', '1');
+        }
         $("#fastfoodiframe").prop('src', 'About:blank');
     }
 }
