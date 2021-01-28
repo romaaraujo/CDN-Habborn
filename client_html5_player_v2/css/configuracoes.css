@@ -1,208 +1,260 @@
 html {
-    background: rgba(9, 41, 56, 0.774);
+  background: rgba(9, 41, 56, 0.774);
 
 }
 
 .ativo {
-    display: block;
+  display: block;
 }
 
 .configuracoes {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    font-family: "Roboto Condensed", sans-serif;
-    z-index:50;
-    position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index:50;
+  position: absolute;
 }
 
 
 .configuracoes>div {
-  /* V1 
-    background: rgb(20, 130, 219);
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.521);
-    margin-right: 5px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 2px solid rgb(198, 224, 228)
-  */
-    background: #2b2b2b;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0px 2px 0px rgb(0 0 0 / 45%), inset 0px 0px 0px 2px rgb(255 255 255 / 10%);
-    margin-right: 5px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid black;
-    background-clip: border-box;
+/* V1 
+  background: rgb(20, 130, 219);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.521);
+  margin-right: 5px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid rgb(198, 224, 228)
+*/
+  background: #2b2b2b;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 2px 0px rgb(0 0 0 / 45%), inset 0px 0px 0px 2px rgb(255 255 255 / 10%);
+  margin-right: 5px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  background-clip: border-box;
 } 
 .configuracoes>.botao:hover {
-    opacity: 0.9;
-    cursor: pointer;
-    padding-left: 5px;
-    padding-right: 5px;
-    transition: all 200ms;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
 }
 
 .configuracoes>.botao:active {
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: all 100ms;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
 }
 
 .configuracoes>.botao>.icone {
-    font-size: 25px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .configuracoes>.player {
-    width: 200px;
-    text-shadow: 1px 1px rgba(36, 36, 36, 0.884);
+  width: 200px;
+  text-shadow: 1px 1px rgba(36, 36, 36, 0.884);
 }
 
 .configuracoes>.player>.avatar {
-    background: url(https://habborn.biz/imager.php?user=iDHabborn&action=sit&direction=2&head_direction=2&img_format=png&gesture=std&headonly=0&size=s) no-repeat;
-    width: 30px;
-    height: 40px;
-    transition: all 2s;
-    margin-left: -10px;
-    filter: drop-shadow(1px 1px 0 rgb(255, 255, 255)) drop-shadow(-1px 0px 0 rgb(255, 255, 255)) drop-shadow(0 -1px 0 rgb(255, 255, 255));
+  background: url(https://habborn.biz/imager.php?user=iDHabborn&action=sit&direction=2&head_direction=2&img_format=png&gesture=std&headonly=0&size=s) no-repeat;
+  width: 30px;
+  height: 40px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  margin-left: -10px;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="0" /><feOffset dx="2" dy="2" result="offsetblur" /><feFlood flood-color="rgba(255,255,255,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(1px 1px 0 rgb(255, 255, 255)) drop-shadow(-1px 0px 0 rgb(255, 255, 255)) drop-shadow(0 -1px 0 rgb(255, 255, 255));
+          filter: drop-shadow(1px 1px 0 rgb(255, 255, 255)) drop-shadow(-1px 0px 0 rgb(255, 255, 255)) drop-shadow(0 -1px 0 rgb(255, 255, 255));
+  filter: progid:DXImageTransform.Microsoft.Glow(color=rgb(255, 255, 255),strength=0) progid:DXImageTransform.Microsoft.Shadow(color=rgb(255, 255, 255),strength=0);
 }
 
 .configuracoes>.player>.info {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .configuracoes>.player>.info>.programacao {
-    overflow: hidden;
-    width: 100px;
-    height: 15px;
-    font-size: 13px;
+  overflow: hidden;
+  width: 100px;
+  height: 15px;
+  font-size: 13px;
 }
 
 .configuracoes>.player>.coluna>.controle {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .configuracoes>.player>.coluna>.controle:hover {
-    opacity: 0.8;
-    cursor: pointer;
-    transition: all 200ms;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  cursor: pointer;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
 }
 
 .configuracoes>.player .locutor {
-    width: 100px;
-    white-space: nowrap;
-    font-size: 13px;
+  width: 100px;
+  white-space: nowrap;
+  font-size: 13px;
 }
 
 .configuracoes>.player .ouvintes {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .configuracoes>.player .locutor:hover,
 .scrolling:hover,
 .ouvintes:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .configuracoes>.player .slider-wrapper {
-    display: inline-block;
-    width: 20px;
-    height: 35px;
+  display: inline-block;
+  width: 20px;
+  height: 35px;
 }
 
 .configuracoes>.player .slider-wrapper input {
-    margin-top: 10px;
-    width: 30px;
-    height: 15px;
-    transform: rotate(-90deg);
+  margin-top: 10px;
+  width: 30px;
+  height: 15px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .configuracoes>.player .slider {
-    -webkit-appearance: none;
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.521);
-  }
-  
-  .configuracoes>.player .slider:hover {
-    opacity: 1;
-  }
-  
-  .configuracoes>.player .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 10px;
-    height: 11px;
-    border-radius: 10px;
-    background: rgb(37, 186, 255);
-    box-shadow: -2px 1px rgba(0, 0, 0, 0.521);
-    cursor: pointer;
-  }
-  
-  .configuracoes>.player .slider::-moz-range-thumb {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    text-shadow: 2px solid black;
-    background: rgb(0, 0, 0);
-    cursor: pointer;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.521);
-  }
+  -webkit-appearance: none;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.521);
+}
+
+.configuracoes>.player .slider:hover {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.configuracoes>.player .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 11px;
+  border-radius: 10px;
+  background: #2b2b2b;
+  box-shadow: -2px 1px rgba(0, 0, 0, 0.521);
+  cursor: pointer;
+}
+
+.configuracoes>.player .slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  text-shadow: 2px solid black;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.521);
+}
 
 
-  .configuracoes>.player .programacao .container {
-    overflow: hidden;
-    white-space: nowrap;
+.configuracoes>.player .programacao .container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.configuracoes>.player .programacao .scrolling {
+  -webkit-animation: marquee 20s linear infinite;
+          animation: marquee 20s linear infinite;
+  display: inline-block;
+  padding-right: 20px;
+  padding-left: 100px;
+}
+
+@-webkit-keyframes marquee {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-  
-  .configuracoes>.player .programacao .scrolling {
-    animation: marquee 20s linear infinite;
-    display: inline-block;
-    padding-right: 20px;
-    padding-left: 100px;
+  to { 
+    -webkit-transform: translateX(-100%); 
+            transform: translateX(-100%);
   }
-  
-  @keyframes marquee {
-    from {
-      transform: translateX(0);
-    }
-    to { 
-      transform: translateX(-100%);
-    }
+}
+
+@keyframes marquee {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
+  to { 
+    -webkit-transform: translateX(-100%); 
+            transform: translateX(-100%);
+  }
+}
 
 
-  #fastfoodiframe {
-    background: rgb(43, 43, 43);
-    border: 2px solid white;         /* Reset default border */
-    height: calc(100vh - 100px);
-    width: 100%;
-    margin-top: 60px;
-    border-radius: 5px;
-    display: none;
-    z-index: 60;
-  }
+#fastfoodiframe {
+  background: rgb(43, 43, 43);
+  border: 2px solid white;         /* Reset default border */
+  height: calc(100vh - 100px);
+  width: 100%;
+  margin-top: 60px;
+  border-radius: 5px;
+  display: none;
+  z-index: 60;
+}
