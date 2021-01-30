@@ -23,8 +23,8 @@ html {
 
 
 .configuracoes>div {
-/* V1 
-  background: rgb(20, 130, 219);
+
+  background: #367897;
   border-radius: 50px;
   width: 40px;
   height: 40px;
@@ -36,8 +36,8 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px solid rgb(198, 224, 228)
-*/
+  border: 2px solid rgb(198, 224, 228);
+/* V2 
   background: #2b2b2b;
   border-radius: 50px;
   width: 40px;
@@ -61,7 +61,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid black;
-  background-clip: border-box;
+  background-clip: border-box;*/
 } 
 .configuracoes>.botao:hover {
   opacity: 0.9;
@@ -196,7 +196,7 @@ html {
   width: 10px;
   height: 11px;
   border-radius: 10px;
-  background: #2b2b2b;
+  background: #367897;
   box-shadow: -2px 1px rgba(0, 0, 0, 0.521);
   cursor: pointer;
 }
