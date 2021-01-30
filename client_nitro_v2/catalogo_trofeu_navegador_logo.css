@@ -1,0 +1,172 @@
+/* CATALOGO */
+.nitro-catalog {
+    background-color: #e9e9e1!important;
+    border-bottom-left-radius: 5px!important;
+    border-bottom-right-radius: 5px!important;
+}
+.nitro-catalog .bg-secondary{
+    background-color: #D2D1CB!important;
+}
+.nitro-catalog .position-relative > .bg-secondary{
+    color: black !important;
+}
+.nitro-catalog .room-preview {
+    background-color: #000000!important;
+}
+
+.nitro-catalog .drag-handler {
+    background: #367897!important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px #000000;
+    border-bottom: 1px solid black;
+}
+
+.nitro-catalog .btn-group > .btn:not(.dropdown-toggle):not(.btn-success)  {
+    background-color:#367897 ;
+}
+
+
+.nitro-catalog .btn-group > .active {
+    background-color:#2b6079 !important;
+}
+
+.nitro-catalog-navigation-component {
+    background: #D2D1CB !important;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.nitro-catalog .nitro-catalog-navigation-component .list-group .nav-item .list-group-item:hover {
+    font-weight: 500;
+    background: rgba(0,0,0, 0.1);
+}
+
+
+.nitro-catalog .nitro-catalog-navigation-component  .list-group-item.active, .nitro-catalog .nitro-catalog-navigation-component .list-group-item:active {
+    color: black;
+    background: rgba(0,0,0, 0.1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: bold !important;
+}
+
+.nitro-catalog .nitro-catalog-navigation-component .bg-secondary {
+    background-color: #000 !important;
+}
+
+.nitro-catalog .icon-currency-103{background-image:url("//habborn.biz/assets/images/wallet/icons/103.png");width:15px;height:15px}
+
+/* LOGO */
+
+i.icon.icon-nitro-light {
+    background-image: url("//habborn.biz/assets/images/toolbar/icons/habbo.png") !important;
+}
+
+i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
+    width: 44px !important;
+    height: 30px !important;
+}
+
+.nitro-loading-component .logo {
+    background: url(//i.imgur.com/NtSYrEM.png) no-repeat center !important;
+    width: 331px !important;
+    height: 449px !important;
+}
+
+.nitro-catalog-confirm-purchase-component {
+    background-color: #e9e9e1!important;
+}
+.nitro-catalog-confirm-purchase-component > .drag-handler {
+    background: #367897!important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px #000000;
+    border-bottom: 1px solid black;
+}
+
+.nitro-catalog-confirm-purchase-component .offer-name,.nitro-catalog-confirm-purchase-component .offer-quantity {
+    color: black;
+}
+
+/* NAV */
+
+.nitro-navigator {
+    background-color: #e9e9e1!important;
+    border-bottom-left-radius: 5px!important;
+    border-bottom-right-radius: 5px!important;
+}
+
+.nitro-navigator .drag-handler {
+    background: #367897!important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px #000000;
+    border-bottom: 1px solid black;
+}
+
+.nitro-navigator .ps-content .m-0 {
+    color: black;
+    text-shadow: 1px 1px 0px #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nitro-navigator .item-detail .btn {
+    background: rgba(0,0,0, 0.6);
+}
+
+.nitro-navigator .item-detail .btn:hover {
+    background: rgba(0,0,0, 0.7);
+}
+
+.nitro-navigator .item-detail .badge {
+    width: 40px;
+}
+
+.nitro-navigator .btn-group .btn,.nitro-navigator .input-group .btn{
+    background-color:#367897 !important;
+}
+
+.nitro-navigator .btn-group .btn:hover,.nitro-navigator .input-group .btn:hover{
+    background-color:#2b6079 !important;
+}
+
+.nitro-navigator .btn-group > .active {
+    background-color:#2b6079 !important;
+}
+
+/* TROFÃ‰U */
+
+.nitro-trophy {
+    background: #ECC547 !important;
+    color: black !important;
+    width: 340px !important;
+    max-width: 340px !important;
+    font-size: 14px !important;;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255, 0.6)!important;
+    border: 1px solid black!important;
+}
+
+.nitro-trophy .fas{
+    color: black ;
+}
+
+.nitro-trophy .justify-content-between:not(.drag-handler) {
+    font-weight: bold;
+    border-top: 1px solid rgba(0,0,0, 0.5);
+    margin-bottom: -20px;
+    font-size: 14px;
+}
+
+.nitro-trophy .drag-handler h6 {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+}
