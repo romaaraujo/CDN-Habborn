@@ -15,7 +15,7 @@
 }
 
 .nitro-catalog .drag-handler {
-    background: #367897!important;
+    background-color: #367897!important;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding-bottom: 10px;
@@ -33,14 +33,14 @@
 }
 
 .nitro-catalog-navigation-component {
-    background: #D2D1CB !important;
+    background-color: #D2D1CB !important;
     color: black !important;
     border: 1px solid black !important;
     font-weight: bold !important;
 }
 
 .nitro-catalog .nitro-catalog-navigation-component .list-group .nav-item .list-group-item:hover {
-    background: #367897 !important;
+    background-color: #367897 !important;
     color: white !important;
     border-top-right-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
@@ -55,7 +55,7 @@
 }
 
 .nitro-catalog .nitro-catalog-navigation-component  .list-group-item.active, .nitro-catalog .nitro-catalog-navigation-component .list-group-item:active {
-    background: #367897;
+    background-color: #367897;
     color: white !important;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -90,7 +90,7 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     background-color: #e9e9e1!important;
 }
 .nitro-catalog-confirm-purchase-component > .drag-handler {
-    background: #367897!important;
+    background-color: #367897!important;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding-bottom: 10px;
@@ -111,7 +111,7 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
 }
 
 .nitro-navigator .drag-handler {
-    background: #367897!important;
+    background-color: #367897!important;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding-bottom: 10px;
@@ -164,7 +164,7 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
 /* TROFÃ‰U */
 
 .nitro-trophy {
-    background: #ECC547 !important;
+    background-color: #ECC547 !important;
     color: black !important;
     width: 340px !important;
     max-width: 340px !important;
@@ -192,7 +192,7 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
 }
 
 .nitro-catalog-confirm-purchase-component > .header-draggable {
-    background: #367897!important;
+    background-color: #367897!important;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding-bottom: 10px;
@@ -204,16 +204,23 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     color: black !important;
 }
 
-// ALERT
+/* ALERT */
 
 .nitro-alert {
-    background: #e9e9e1 !important;
+    background-color: #e9e9e1 !important;
     max-width: 400px !important;
     width: 400px !important;
 }
 
+.nitro-alert .p-3 {
+    background-color: #e9e9e1 !important;
+    border-bottom: 1px solid black !important;
+    border-bottom-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
 .nitro-alert .header-draggable {
-    background: #367897!important !important;
+    background-color: #367897!important;
     border-top-left-radius: 5px !important;
     border-top-right-radius: 5px !important;
     padding-bottom: 10px !important;
@@ -233,7 +240,7 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     background-color: #2b6079 !important;
 }
 
-// BLOCK NOTF MESSAGES
+ /* BLOCK NOTF MESSAGES */
 
 .nitro-notification-dialog-message, .nitro-notification-dialog{
     display: none !important;
@@ -242,14 +249,14 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     padding: 0px !important;
 }
 
-// INVENTORY
+/* INVENTORY */
 
 .nitro-inventory {
-    background: #e9e9e1!important;
+    background-color: #e9e9e1 !important;
 }
 
 .nitro-inventory .drag-handler {
-    background: #367897!important;
+    background-color: #367897 !important;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding-bottom: 10px;
