@@ -1,75 +1,612 @@
+/* NAVEGADOR */
+
+.nitro-navigator {
+    font-family: sans-serif;
+    width: 400px !important;
+    background: url('https://i.imgur.com/X8ntlw8.png') 0 -4px no-repeat, #dfdfdf !important;
+    box-shadow: 0px 4px 0px 0px #00000030 !important;
+    user-select: none !important;
+    border-radius: 5px !important;
+    border: solid 1px #000000 !important;
+}
+
+.nitro-navigator .drag-handler{
+    padding: 5px !important;
+    width: 100% !important; 
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295 !important;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+}
+
+.nitro-navigator .drag-handler h6 {
+    font-weight: bold !important;
+    font-size: 14px !important;   
+}
+.nitro-navigator .btn-group .btn,.nitro-navigator .btn-group .btn:not(:disabled):not(.disabled):active, .nitro-navigator .btn-group .btn:not(:disabled):not(.disabled).active {
+    padding: 8px !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    box-shadow: inset 0px 4px 0px 0px #c2c9d1 !important;
+    background: linear-gradient(to bottom,#b6bec5 50%,#b0b8bf 50%) !important;
+    cursor: pointer !important;
+    font-size: 12px !important;
+    width: auto !important;
+    text-align: center !important;
+    border-radius: 5px 5px 0px 0px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+}
+
+.nitro-navigator .btn-group .btn:not(:disabled):not(.disabled).active {
+    box-shadow: rgb(255, 255, 255) -1px 3px 0px 0px inset !important;
+    background: linear-gradient(rgb(227, 227, 227) 50%, rgb(223, 223, 223) 50%) !important;
+}
+
+.nitro-navigator .btn-group .btn:hover {
+    background-color: #ADB5BC !important;
+    box-shadow: inset 0px 4px 0px 0px rgba(255, 255, 255, 0.5) !important;
+}
+.nitro-navigator .input-group .btn, .nitro-navigator .input-group .btn:active{
+    height: 30px !important;
+    font-size: 14px !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    background: rgb(249, 249, 249) !important;
+    border: 1px solid rgb(149, 149, 149) !important;
+    border-radius: 3px 0px 0px 3px !important;
+    padding: 9px 30px !important;
+    box-shadow: rgb(236, 236, 236) 0px 5px 0px 0px inset !important;
+    filter: drop-shadow(0px 3px 0px #0000001a) !important;
+    outline: 0 !important;
+    border-right: 0 !important;
+}
+.nitro-navigator .input-group .form-control {
+    height:30px !important;
+    font-size: 14px !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    background: rgb(249, 249, 249) !important;
+    border: 1px solid rgb(149, 149, 149) !important;
+    border-left: 0 !important;
+    border-radius: 0px 3px 3px 0px !important;
+    padding: 9px 30px !important;
+    box-shadow: rgb(236, 236, 236) 0px 5px 0px 0px inset !important;
+    filter: drop-shadow(0px 3px 0px #0000001a) !important;
+    outline: 0 !important;
+}
+
+.nitro-navigator .input-group .dropdown-menu {
+    font-size: 14px !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    border: 1px solid rgb(149, 149, 149) !important;
+    border-radius: 3px !important;
+    outline: 0 !important;
+}
+
+.nitro-navigator .input-group .dropdown-menu > .dropdown-item:hover {
+     box-shadow: rgb(236, 236, 236) 0px 5px 0px 0px inset !important;
+}
+
+.nitro-navigator .dropdown:has(.show) {
+    background: #000 !important;
+}
+
+.nitro-navigator .mb-1 .px-3 > h6{
+    font-size: 12px !important;
+    color: rgb(45, 45, 45) !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+.nitro-navigator .item-detail .text-truncate{
+    font-size: 13px !important;
+}
+.nitro-navigator .item-detail .btn {
+    background: #d7d7d7 !important;
+    color: #3a3a3a !important;
+    text-shadow: 0px !important;
+    font-weight: bold !important;
+    padding: 7px !important;
+    overflow: hidden !important;
+    border-radius: 5px !important;
+    box-shadow: inset 0px 0px 0px 1px #d0d0d0 !important;
+    border: 0 !important;
+}
+
+.nitro-navigator .item-detail .btn:hover {
+    background: #d7d7d711 !important;
+}
+
+.nitro-navigator .item-detail .badge i {
+    color: transparent !important;
+    background: url('https://i.imgur.com/vvbvCWM.png') -7px -3.5px no-repeat !important;
+}
+.nitro-navigator .item-detail .badge {
+    min-width: 45px!important;
+    max-width: 45px!important;
+    height: 25px !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    border: solid 1px #cbcbcb !important;
+    border-radius: 3px !important;
+/*     background: linear-gradient(to bottom, #1e7295 50%, #196584 50%) !important; */
+}
+
+.nitro-navigator .mb-1 .px-3 i {
+    cursor: pointer !important;
+}
+
+.nitro-navigator .item-detail .fa-info-circle {
+    color: white !important;
+    background: linear-gradient(to right, #1e7295 80%, #196584 50%) !important;
+    padding: 11.5px !important;
+    margin-top: -6px !important;
+    margin-right: -6px !important;
+    border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    padding-top: 20px !important;
+    transition: padding 200ms !important;
+}
+
+.nitro-navigator .item-detail .fa-info-circle:hover {
+    transition: padding 200ms !important;
+    padding-left: 13px !important;
+}
+
+.nitro-navigator .nitro-navigator-slider-component {
+    max-height: 68px !important;
+}
+
+.nitro-navigator .ps-content {
+    height: 10px !important;
+    max-height: 450px !important;
+}
+
+
+/* CRIAR QUARTO */
+
+div[nitro-navigator-room-creator-component] > .align-items-center {
+    padding: 5px !important;
+}
+
+div[nitro-navigator-room-creator-component]{
+    background-color: #dfdfdf !important;
+    user-select: none !important;
+    border-radius: 5px !important;
+    overflow: hidden !important;
+    font-family: sans-serif !important;
+}
+
+div[nitro-navigator-room-creator-component] .align-items-center {
+    cursor: pointer !important;
+    background: #1e7295 !important;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14 !important;
+}
+div[nitro-navigator-room-creator-component] label
+{
+    margin: 0px !important;
+    color: #000000cf !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+}
+
+div[nitro-navigator-room-creator-component] input, div[nitro-navigator-room-creator-component] textarea, div[nitro-navigator-room-creator-component] select
+{
+    color: #000000d6 !important;
+    background: #f9f9f9 !important;
+    border: solid 1px #464646 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0px 5px 0px 0px #0000000d !important;
+    width: 100% !important;
+    resize: none !important;
+    padding: 7px 4px 4px 4px !important;
+    font-family: Arial !important;
+    top: 3px !important;
+    position: relative !important;
+    margin-bottom: 10px !important;
+}
+div[nitro-navigator-room-creator-component] .btn-success
+{
+    width: 135px !important;
+    background: #009c2e !important;
+    margin-top: 7px !important;
+    border: 0 !important;
+    border-top: solid 4px #0abd1e !important;
+    border-bottom: solid 4px #06872c !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    padding: 4px !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    box-shadow: 0px 0px 0px 0px !important;
+    font-weight: bold!important;
+}
+
+div[nitro-navigator-room-creator-component] .btn-success:hover{
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1) !important;
+}
+[nitro-navigator-room-creator-component] .btn-success:focus {
+    background: #009c2e !important;
+    margin-top: 7px !important;
+    border: 0 !important;
+    border-top: solid 4px #0abd1e !important;
+    border-bottom: solid 4px #06872c !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    padding: 4px !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    box-shadow: 0px 0px 0px 0px !important;
+    font-weight: bold!important;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+[nitro-navigator-room-creator-component] h6{
+    font-weight: bold !important;
+    font-size: 14px !important;   
+    padding: 5px !important;
+    width: 100% !important; 
+    color: #ffffffe6 !important;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+}
+div[nitro-navigator-room-creator-component] .col-5 .btn-secondary 
+{
+    font-weight: bold !important;
+    padding: 4px !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    width: 75px !important;
+        background: #F44336 !important;
+    border-top: solid 4px #f5564a !important;
+    border-bottom: solid 4px #d64338 !important;
+    margin-top: 7px !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    box-shadow: 0 0 0 0 !important
+}
+
+div[nitro-navigator-room-creator-component] .col-5 .btn-secondary:hover{
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1) !important;
+}
+
+div[nitro-navigator-room-creator-component]  .item-detail{
+    background-color: #dfdfdf !important;
+}
+
+div[nitro-navigator-room-creator-component] .btn-secondary
+{
+    border: 0 !important;
+    background-color: #0000000a !important;
+    border-radius: 4px !important;
+    float: left !important;
+    cursor: pointer !important;
+    box-shadow: inset 5px -5px 0px 0px #00000008 !important;
+    overflow: hidden !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+div[nitro-navigator-room-creator-component] .detail-info:focus, div[nitro-navigator-room-creator-component] .detail-info.active{
+    border: 2px solid black !important;
+}
+
+/* BOTÃO CLOSE */
+
+.nitro-avatar-editor .close,.modal-dialog.modal-dialog-centered.modal-sm>.modal-content>div>.modal-header .close,.nitro-navigator .close,.nitro-catalog-confirm-purchase-component .header-draggable .close, .nitro-room-doorbell .close, .nitro-catalog-confirm-purchase-component .drag-handler .close, .nitro-inventory .close, .nitro-navigator .close, [nitro-navigator-room-creator-component] .close, .nitro-catalog .close {
+    position: relative !important;
+    float: right !important;
+    width: 24px !important;
+    height: 24px !important;
+    margin: 6px 0px !important;
+    border: solid 2px #ffffff !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    background: linear-gradient(to bottom,#ff0000 50%,#D90000 50%) !important;
+    opacity: 1 !important;
+}
+
+.nitro-avatar-editor .close:hover,.modal-dialog.modal-dialog-centered.modal-sm>.modal-content>div>.modal-header .close:hover,.nitro-navigator .close:hover,.nitro-catalog-confirm-purchase-component .header-draggable .close:hover,.nitro-room-doorbell .close:hover,.nitro-catalog-confirm-purchase-component .drag-handler .close:hover, .nitro-inventory .close:hover, .nitro-navigator .close:hover, [nitro-navigator-room-creator-component] .close:hover, .nitro-catalog .close:hover{
+    opacity: 0.9 !important;
+}
+
 /* CATALOGO */
+
 .nitro-catalog {
-    background-color: #e9e9e1!important;
-    border-bottom-left-radius: 5px!important;
-    border-bottom-right-radius: 5px!important;
-}
-.nitro-catalog .bg-secondary{
-    background-color: #D2D1CB!important;
-}
-.nitro-catalog .position-relative > .bg-secondary{
-    color: black !important;
-}
-.nitro-catalog .room-preview {
-    background-color: #000000!important;
+    font-family: sans-serif !important;
+    background: url('https://i.imgur.com/X8ntlw8.png') 0 -4px repeat-x, #dfdfdf !important;
+    box-shadow: 0px 4px 0px 0px #00000030 !important;
+    user-select: none !important;
+    border-radius: 5px !important;
+    border: solid 1px #000000 !important;
 }
 
-.nitro-catalog .drag-handler {
-    background-color: #367897!important;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 1px #000000;
-    border-bottom: 1px solid black;
+.nitro-catalog .header-draggable {
+    border-top-right-radius:  5px!important;
+    border-top-left-radius:  5px!important;
+    padding: 5px !important;
+    width: 100% !important; 
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    cursor: pointer !important;
+    font-size: 14px !important;
 }
 
-.nitro-catalog .btn-group > .btn:not(.dropdown-toggle):not(.btn-success)  {
-    background-color:#367897 ;
+.nitro-catalog .header-draggable h6 {
+    font-weight: bold !important;
+    font-size: 14px !important;   
+}
+.nitro-catalog .p-3 .col .d-flex.flex-column.w-100.h-100.card.nitro-catalog-layout-pets3-component.small.p-1 {
+    background: transparent !important;
+     border: 0 !important;
+     box-shadow: 0 0 0 0 !important;
+     color: #000000a8;
+ }
+.nitro-catalog .col-12 .btn-group .btn-secondary,.nitro-catalog .col-12 .btn-group .btn-secondary:not(:disabled):not(.disabled):active, .nitro-catalog .col-12 .btn-group .btn-secondary:not(:disabled):not(.disabled).active {
+    padding: 8px !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    box-shadow: inset 0px 4px 0px 0px #c2c9d1 !important;
+    background: linear-gradient(to bottom,#b6bec5 50%,#b0b8bf 50%) !important;
+    cursor: pointer !important;
+    font-size: 12px !important;
+    width: auto !important;
+    text-align: center !important;
+    border-radius: 5px 5px 0px 0px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border: 0 !important;
 }
 
-
-.nitro-catalog .btn-group > .active {
-    background-color:#2b6079 !important;
+.nitro-catalog .col-12 .btn-group .btn-secondary:not(:disabled):not(.disabled).active {
+    box-shadow: rgb(255, 255, 255) -1px 3px 0px 0px inset !important;
+    background: linear-gradient(rgb(227, 227, 227) 50%, rgb(223, 223, 223) 50%) !important;
 }
 
-.nitro-catalog-navigation-component {
-    background-color: #D2D1CB !important;
-    color: black !important;
-    border: 1px solid black !important;
+.nitro-catalog .col-12 .btn-group .btn-secondary:hover {
+    background-color: #ADB5BC !important;
+    box-shadow: inset 0px 4px 0px 0px rgba(255, 255, 255, 0.5) !important;
+}
+.nitro-catalog .col-12 .input-group .btn-secondary, .nitro-catalog .input-group .btn-secondary:active{
+    height: 30px !important;
+    font-size: 14px !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    background: rgb(249, 249, 249) !important;
+    border: 1px solid rgb(149, 149, 149) !important;
+    border-radius: 3px 0px 0px 3px !important;
+    padding: 9px 30px !important;
+    box-shadow: rgb(236, 236, 236) 0px 5px 0px 0px inset !important;
+    filter: drop-shadow(0px 3px 0px #0000001a) !important;
+    outline: 0 !important;
+    border-right: 0 !important;
+}
+
+.nitro-catalog > .nitro-catalog-navigation-component{
+    background: #367897 !important;
+    border-top: solid 1px #788696b0 !important;
+    border-bottom: solid 1px #788696b0 !important;
+    box-shadow: 0px 0px 1px 1px #ffffff2e !important;
+}
+
+.nitro-catalog .list-group .nav-item:not(.list-group-flush) .nav-item{
+    background: #e2e5e9 !important;
+    border-top: solid 1px #788696 !important;
+    border-bottom: solid 1px #788696 !important;
+    margin-bottom: -1px !important;
+}
+
+.nitro-catalog .list-group .nav-item:not(.list-group-flush) .nav-item p {
+    color: #000000a8 !important;
+    padding: 2px !important;
+    font-size: 14px !important;
     font-weight: bold !important;
 }
 
-.nitro-catalog .nitro-catalog-navigation-component .list-group .nav-item .list-group-item:hover {
-    background-color: #367897 !important;
-    color: white !important;
-    border-top-right-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.5)!important;
-     text-shadow: 1px 1px 1px #000000;
+.nitro-catalog .nitro-catalog-navigation-component .list-group .nav-item .list-group-item {
+    color: #000000a8 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
 }
 
-.nitro-catalog .list-group .list-group-flush {
-    background: rgba(0,0,0, 0.1);
-    border-top-right-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
+.nitro-catalog .nav-item .active {
+    box-shadow: rgb(255, 255, 255) 0px 3px 0px 0px inset !important;
+    background: rgba(245, 245, 245, 0.86) !important;
 }
 
-.nitro-catalog .nitro-catalog-navigation-component  .list-group-item.active, .nitro-catalog .nitro-catalog-navigation-component .list-group-item:active {
-    background-color: #367897;
-    color: white !important;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0, 0.5)!important;
-    text-shadow: 1px 1px 2px #000000;
+.nitro-catalog .list-group {
+    background: #cbd1d8 !important;
 }
 
-.nitro-catalog .nitro-catalog-navigation-component .bg-secondary {
-    background-color: #000 !important;
+.nitro-catalog .list-group .nav-item:hover {
+    background: #e2e5e9 !important;
+}
+
+.nitro-catalog .bg-secondary:not(.m-2.p-2){ background: transparent !important;
+}
+
+.nitro-catalog .grid-container .grid-items .item-detail{
+    background: #cdd3d9 !important;
+    border-radius: 5px !important;
+}
+.nitro-catalog .btn.btn-secondary.detail-info {
+    background-color: #cdd3d9 !important;
+    border: solid 2px #96a8bb !important;
+    border-radius: 5px !important;
+}
+.nitro-catalog .btn.btn-secondary.detail-info:hover
+{
+    background-color: rgba(225,225,225,0.6) !important;
+    
+}
+
+.nitro-catalog .grid-container .grid-items .item-detail .detail-info.has-image.active {
+    border: 3px solid #9fb1c4 !important;
+    background-color: #d5dbe1 !important;
+}
+
+.nitro-catalog .room-preview {
+    background:  #000 !important;
+    box-shadow: 0px 4px 0px 0px #00000030 !important;
+    border-radius: 5px !important;
+}
+
+.nitro-catalog .col .w-100 .position-absolute.bg-secondary{
+    border: solid 2px #629db5 !important;
+    color: #629db5 !important;
+    background: #d1dfe4 !important;
+    font-weight: bold !important;
+    padding: 3px !important;
+}
+.nitro-catalog .bg-secondary.rounded.my-3.py-2.px-3{
+    background: #00000032!important;
+    color: #000000a8 !important;
+    font-weight: bold !important;
+}
+.nitro-catalog .bg-secondary.rounded.my-3.py-2.px-3 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),.nitro-catalog .bg-secondary.rounded.my-3.py-2.px-3 .btn-group > .btn:not(:first-child){
+    margin-left: 2px !important;
+    border-radius: 4px !important;
+    border: 0 !important;
+    box-shadow: 0 0 0 0 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+.nitro-catalog .bg-secondary.rounded.my-3.py-2.px-3 .btn-group > .btn:not(:last-child):not(.dropdown-toggle){
+    background: #009c2e !important;
+    border-top: solid 4px #0abd1e !important;
+    border-bottom: solid 4px #06872c !important;
+}
+.nitro-catalog .bg-secondary.rounded.my-3.py-2.px-3 .btn-group > .btn:not(:first-child){
+    background: #286587 !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+}
+
+.nitro-catalog .bg-secondary.rounded.my-3.py-2.px-3 .btn-group > .btn:not(:last-child):not(.dropdown-toggle):hover,.nitro-catalog .bg-secondary.rounded.my-3.py-2.px-3 .btn-group > .btn:not(:first-child):hover{
+    box-shadow: 0 3px 0 0 #00000030 !important;
 }
 
 .nitro-catalog .icon-currency-103{background-image:url("//habborn.biz/assets/images/wallet/icons/103.png");width:15px;height:15px}
 
-/* LOGO */
+.nitro-catalog .bg-secondary .btn.btn-primary.btn-sm {
+    background: #286587 !important;
+    border: 1px solid black !important;
+}
+
+.nitro-catalog .bg-secondary .btn.btn-primary.btn-sm:hover {
+   box-shadow: 0px 2px 0 0 rgba(0,0,0, 0.6) !important;
+}
+
+.nitro-catalog-confirm-purchase-component {
+    font-family: Sans-serif !important;
+    background-color: #dfdfdf !important;
+}
+
+.nitro-catalog-confirm-purchase-component .drag-handler,.nitro-catalog-confirm-purchase-component .card-header.header-draggable {
+    padding: 5px !important;
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295 !important;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14 !important;
+    cursor: pointer !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+.nitro-catalog-confirm-purchase-component .drag-handler h6,.nitro-catalog-confirm-purchase-component .card-header.header-draggable{ 
+    font-size: 14px !important;
+    font-weight: bold !important;
+
+}
+
+.nitro-catalog-confirm-purchase-component .btn.btn-primary{
+    border: 0 !important;
+    box-shadow: 0px 0px 20px 0px #0000000f !important;
+        background: #F44336 !important;
+    border-top: solid 4px #f5564a !important;
+    border-bottom: solid 4px #d64338 !important;
+    border-radius: 5px !important;
+}
+
+.nitro-catalog-confirm-purchase-component .card-body{
+    color: #000000b3 !important;
+}
+
+.nitro-catalog-confirm-purchase-component .btn.btn-success{
+    border: 0 !important;
+    box-shadow: 0px 0px 20px 0px #0000000f !important;
+    background: #009c2e !important;
+    border-top: solid 4px #0abd1e !important;
+    border-bottom: solid 4px #06872c !important;
+    border-radius: 5px !important;
+    margin-left: 10px !important;
+}
+
+.nitro-catalog-confirm-purchase-component .btn.btn-success:hover,.nitro-catalog-confirm-purchase-component .btn.btn-primary:hover{
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.2) !important;
+}
+
+.nitro-catalog-confirm-purchase-component .offer-name,.offer-quantity {
+    color: #000000b3 !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+
+.nitro-catalog-confirm-purchase-component .row.p-3 .d-flex.align-items-center.justify-content-center.bg-secondary.rounded.w-100 {
+    border-radius: 0px 5px 5px 0px !important;
+    box-shadow: inset 0px 4px 0px 0px #0000000d !important;
+    background: linear-gradient(to bottom,#FFC107 50%,#ffcb31 50%) !important; 
+    color: #000000b3 !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+}
+/* ALERTA */
+.nitro-alert > .drag-handler {
+    box-shadow: inset 0px -4px 0px 0px #00000026 !important;
+    background: linear-gradient(
+180deg
+, rgba(21,87,113,1) 0%, rgba(36,127,164,1) 100%) !important;
+    padding: 10px !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+
+.nitro-alert .d-flex.flex-column.p-3{
+    background-color: #dfdfdf !important;
+    box-shadow: 0px 4px 0px 0px #00000030 !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    color: #000000db !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+}
+
+.nitro-alert .btn.btn-secondary {
+    font-family: Sans-Serif !important;
+    border: 0 !important;
+    font-weight: bold  !important;
+    color: #fff !important;
+    filter: drop-shadow(2px 4px 6px #0000002b) !important;
+    box-shadow: inset 0px -3px 0px 0px #0000000d !important;
+    font-size: 14px  !important;
+    background: #009c2e  !important;
+    border-top: solid 4px #0abd1e  !important;
+    border-bottom: solid 4px #06872c  !important;
+    border-radius: 4px  !important;
+
+}
+
+.nitro-alert .btn.btn-secondary:hover {
+    background: #009c2ef2 !important;
+    border-top: solid 4px #0abd1ef2 !important;
+    border-bottom: solid 4px #06872cf2 !important;
+    box-shadow: 0px 3px 0px 0px #0000001f !important;
+}
+
+/* ICONS */
 
 i.icon.icon-nitro-light {
     background-image: url("//habborn.biz/assets/images/toolbar/icons/habbo.png") !important;
@@ -80,88 +617,7 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     height: 30px !important;
 }
 
-.nitro-loading-component .logo {
-    background: url(//i.imgur.com/NtSYrEM.png) no-repeat center !important;
-    width: 331px !important;
-    height: 449px !important;
-}
-
-.nitro-catalog-confirm-purchase-component {
-    background-color: #e9e9e1!important;
-}
-.nitro-catalog-confirm-purchase-component > .drag-handler {
-    background-color: #367897!important;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 1px #000000;
-    border-bottom: 1px solid black;
-}
-
-.nitro-catalog-confirm-purchase-component .offer-name,.nitro-catalog-confirm-purchase-component .offer-quantity {
-    color: black;
-}
-
-/* NAV */
-
-.nitro-navigator {
-    background-color: #e9e9e1!important;
-    border-bottom-left-radius: 5px!important;
-    border-bottom-right-radius: 5px!important;
-}
-
-.nitro-navigator .drag-handler {
-    background-color: #367897!important;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 1px #000000;
-    border-bottom: 1px solid black;
-}
-
-.nitro-navigator .ps-content .m-0 {
-    color: black;
-    text-shadow: 1px 1px 0px #fff;
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.nitro-navigator .item-detail .btn {
-    background: rgba(0,0,0, 0.6);
-}
-
-.nitro-navigator .item-detail .btn:hover {
-    background: rgba(0,0,0, 0.7);
-}
-
-.nitro-navigator .item-detail .badge {
-    width: 40px;
-}
-
-.nitro-navigator .btn-group .btn,.nitro-navigator .input-group .btn{
-    background-color:#367897 !important;
-}
-
-.nitro-navigator .btn-group .btn:hover,.nitro-navigator .input-group .btn:hover{
-    background-color:#2b6079 !important;
-}
-
-.nitro-navigator .btn-group > .active {
-    background-color:#2b6079 !important;
-}
-
-.nitro-navigator .item-detail > .btn {
-    background-color:#367897 !important;
-    text-shadow: 0px 1px 2px #000000;
-}
-
-.nitro-navigator .item-detail > .btn:hover {
-    background-color:#2b6079 !important;
-}
-
-
-/* TROFÃ‰U */
+/* TROFÉU */
 
 .nitro-trophy {
     background-color: #ECC547 !important;
@@ -178,107 +634,109 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
 }
 
 .nitro-trophy .justify-content-between:not(.drag-handler) {
-    font-weight: bold;
-    border-top: 1px solid rgba(0,0,0, 0.5);
-    margin-bottom: -20px;
-    font-size: 14px;
+    font-weight: bold !important;
+    border-top: 1px solid rgba(0,0,0, 0.5) !important;
+    margin-bottom: -20px !important;
+    font-size: 14px !important;
 }
 
 .nitro-trophy .drag-handler h6 {
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    font-size: 15px;
+    text-align: center !important;
+    width: 100% !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    cursor: pointer !important;
 }
 
-.nitro-catalog-confirm-purchase-component > .header-draggable {
-    background-color: #367897!important;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 1px #000;
-    border-bottom: 1px solid #000;
+.nitro-trophy .close {
+    color: white !important;
+    font-size: 15px !important;
 }
 
-.nitro-catalog-confirm-purchase-component .card-body  p{
-    color: black !important;
-}
+/* HC BAR */
 
-/* ALERT */
-
-.nitro-alert {
-    background-color: #e9e9e1 !important;
-    max-width: 400px !important;
-    width: 400px !important;
-}
-
-.nitro-alert .p-3 {
-    background-color: #e9e9e1 !important;
-    border-bottom: 1px solid black !important;
-    border-bottom-right-radius: 5px !important;
-    border-bottom-left-radius: 5px !important;
-}
-
-.nitro-alert .header-draggable {
-    background-color: #367897!important;
-    border-top-left-radius: 5px !important;
-    border-top-right-radius: 5px !important;
-    padding-bottom: 10px !important;
-    text-shadow: 1px 1px 1px #000 !important;
-    border-bottom: 1px solid #000 !important;
-}
-
-.nitro-alert .p-3{
-    color: black !important;
-}
-
-.nitro-alert .btn {
-    background-color: #367897 !important;
-}
-
-.nitro-alert .btn:hover {
-    background-color: #2b6079 !important;
-}
-
- /* BLOCK NOTF MESSAGES */
-
-.nitro-notification-dialog-message, .nitro-notification-dialog{
+.nitro-purse-component .col.item-detail.btn.btn-primary.rounded.d-flex.nohover + .col.item-detail.btn.btn-primary.rounded.d-flex.nohover + .col.item-detail.btn.btn-primary.rounded.d-flex.nohover + .col.item-detail.btn.btn-primary.rounded.d-flex.nohover+ .col.item-detail.btn.btn-primary.rounded.d-flex.nohover {
     display: none !important;
-    width: 0px !important;
-    height: 0px !important;
-    padding: 0px !important;
 }
 
 /* INVENTORY */
 
 .nitro-inventory {
-    background-color: #e9e9e1 !important;
+    font-family: sans-serif !important;
+    background: url('https://i.imgur.com/X8ntlw8.png') 0 -4px repeat-x, #dfdfdf !important;
 }
 
 .nitro-inventory .drag-handler {
-    background-color: #367897 !important;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 1px #000;
-    border-bottom: 1px solid #000;
+    border-top-right-radius:  5px!important;
+    border-top-left-radius:  5px!important;
+    padding: 5px !important;
+    width: 100% !important; 
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    cursor: pointer !important;
+}
+
+.nitro-inventory .btn-group .btn:not(:disabled):not(.disabled){
+        padding: 8px !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    box-shadow: inset 0px 4px 0px 0px #c2c9d1 !important;
+    background: linear-gradient(to bottom,#b6bec5 50%,#b0b8bf 50%) !important;
+    cursor: pointer !important;
+    font-size: 12px !important;
+    width: auto !important;
+    text-align: center !important;
+    border-radius: 5px 5px 0px 0px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+}
+
+.nitro-inventory .btn-group .btn:not(:disabled):not(.disabled).active {
+    box-shadow: rgb(255, 255, 255) -1px 3px 0px 0px inset !important;
+    background: linear-gradient(rgb(227, 227, 227) 50%, rgb(223, 223, 223) 50%) !important;
 }
 
 .nitro-inventory .room-preview {
     background-color: #000000 !important;
 }
 
+.nitro-inventory .drag-handler h6 {
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
 .nitro-inventory .nitro-inventory-furni-component {
     color: black;
 }
 
-.nitro-inventory .btn {
-    background-color: #9f9f9f !important;
-    color: #fff !important;
+.nitro-inventory .btn.detail-info {
+    box-shadow: inset 0px 4px 0px 0px #c2c9d1 !important;
+    cursor: pointer !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    border-radius: 5px 5px 0px 0px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    background: #cdd3d9;
+    border-radius: 5px !important;
 }
 
-.nitro-inventory .btn:hover, .nitro-inventory .active {
-    background-color: #367897 !important;
+.nitro-inventory .btn.detail-info  {
+    background-color: rgba(0,0,0, 0.1) !important;
+    margin: 0px !important;
+}
+
+.nitro-inventory .btn.detail-info:hover:not(.detail-info.active) {
+    background-color: rgba(0,0,0, 0.15) !important;
+    
+}
+.nitro-inventory .item-detail .detail-info.active {
+    background-color: #96a8bb !important;
+    border: solid 1px #4587ab !important;
 }
 
 .nitro-inventory .btn .count {
@@ -286,11 +744,18 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
 }
 
 .nitro-inventory .col-5 .btn {
-    background-color: #367897 !important;
+    border: 0 !important;
+    background: #286587 !important;
+    margin-top: 7px !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+    border-radius: 4px !important;
+    box-shadow: 0px 0px 0px 0px #00000030 !important;
 }
 
 .nitro-inventory .col-5 .btn:hover {
     background-color: #2b6079 !important;
+    box-shadow: 0px 4px 0px 0px #00000030 !important;
 
 }
 
@@ -298,4 +763,455 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     background-color: #272727 !important;
     padding: 0 !important;
     border: 1px solid #fff !important;
+}
+
+.nitro-inventory .page-link {
+    color: #3a3a3a !important;
+    font-weight: bold !important;
+}
+
+.nitro-inventory .page-item {
+    border: solid 1px #4587ab !important;
+    border-radius: 5px !important;
+    background-color: rgba(0,0,0, 0.1) !important;
+    margin: 2px !important;
+}
+.nitro-inventory .page-item.active {
+    border-top: solid 4px #4587ab !important;
+    box-shadow: 0px 2px 0px 0px #00000030 !important;
+}
+
+.nitro-inventory .room-preview {
+    background:  #000 !important;
+    box-shadow: 0px 4px 0px 0px #00000030 !important;
+    border-radius: 5px !important;
+}
+
+/* CARREGAMENTO */
+
+.nitro-loading-component .logo {
+    background: url(//i.imgur.com/NtSYrEM.png) no-repeat center !important;
+    width: 331px !important;
+    height: 449px !important;
+}
+
+.progress-container.loading-bar.bar {
+    background-color: #ca9605 !important;
+}
+
+/* CHECK IF MOBILE DEVICE */
+@media not screen and (hover: none) and (pointer: coarse){
+    /* TOOLBAR */
+
+    .nitro-toolbar-component {
+        left: 0 !important;
+        bottom: 0 !important;
+        position: fixed !important;
+    }
+
+    .nitro-toolbar-component .nitro-toolbar-component-body{
+        border-radius: 0 !important;
+        border: 0 !important;
+        background: linear-gradient(to bottom,#1f2024fc 10%, #1d1e21fc 10% 40%, #1d1e21fc 40% 60%, #1d1e21fc 90% 80%, #1a1a1dfc 90%) !important;
+        max-height: 65px !important;
+        box-shadow: rgb(255, 255, 255 / 1%) 0px 0px 1px 0.1px !important;
+        border-top: solid 1px #00000047 !important;
+        width: 100% !important;
+    }
+
+    .nitro-toolbar-component .card {
+        border: 0 !important;
+        box-shadow: 0 0 0 0 !important;
+    }
+
+    .nitro-toolbar-component .list-group .list-group-item:not(.splitter,.avatar-image) {
+        width: 65px !important;
+        padding: 10px !important;
+    }
+
+    .nitro-toolbar-component .list-group-vertical {
+        align-items: flex !important;
+        flex-direction: row !important;margin-bottom: 5px !important;
+    }
+
+    .nitro-toolbar-component .nitro-toolbar-me-menu{
+        align-items: flex !important;
+        flex-direction: row !important;
+        border: 0 !important;
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+        box-shadow: rgb(255, 255, 255 / 1%) 0px 0px 25px 0px !important;
+        background: linear-gradient(to bottom,#1f2024fc 10%, #1d1e21fc 10% 40%, #1d1e21fc 40% 60%, #1d1e21fc 90% 80%, #1a1a1dfc 90%) !important;
+    }
+
+    .nitro-toolbar-component .card .card-body .list-group .list-group-item {
+        display: flex !important;
+        width: 65px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: unset !important;
+        pointer-events: all !important;
+    }
+
+    .nitro-toolbar-component .list-group .splitter {
+        width: 0px !important;
+    }
+
+    .nitro-toolbar-component .list-group.py-2.ng-tns-c302-2 {
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+
+    /* CHAT INPUT */
+    .nitro-room-chatinput-component {
+        width: 100% !important;
+        left: 0 !important;
+        bottom: 80px !important;
+        position: fixed !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important; width: 100% !important;
+    }
+
+    .nitro-room-chatinput-component .chatinput-container {
+        width: 450px !important;
+        height: 45px !important;
+        max-height: 45px !important;
+        background: #e9e7e9f0 !important;
+        border: solid 1px #000000f0 !important;
+        box-shadow: inset 0px 5px 0px 0px #c1c1c1f0 !important;
+    }
+
+    .nitro-room-chatinput-component .chatinput-container .input-sizer {
+        display: block !important;
+       
+    }
+
+    .nitro-room-chatinput-component .chatinput-container .input-sizer input{
+        width: 100% !important;
+    }
+    
+    .nitro-room-chatinput-component .chatinput-container:after {
+        background: transparent !important;
+        color: transparent !important;
+        border: 0 !important;
+    }
+    
+/* INFOSTAND */
+    .nitro-room-infostand-component {
+        margin-bottom: 60px !important;
+    }
+    
+} 
+/* MOBILE ENDS */
+
+.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0{
+    font-family: Ubuntu, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
+    background: rgba(34,32,27,0.9) !important;
+    border-radius: 5px !important;
+    border: solid 1px #171717;
+    box-shadow: 0px 3px 20px 10px #0000002b !important;
+    animation: fadeInRight 1s !important;
+}
+.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0{
+    text-align: center !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 4px #000000b0 !important;
+    font-size: 14px !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+}
+
+.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0 .body-image{
+    background: #22201Ba1 !important;
+    box-shadow: inset 0px 0px 0px 2px #34322C !important;
+    border: 1.5px solid #000 !important;
+    border-radius: 5px !important;
+}
+.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0 .badge.badge-secondary.mb-0
+{
+    background: #22201B !important;
+    border: solid 1px #171717 !important;
+    box-shadow: 0px 3px 20px 10px #0000002b !important;
+    font-size: 13px !important;
+    text-align: left !important;
+    white-space: pre-wrap!important;       /* css-3 */
+    word-wrap: break-word!important;       /* Internet Explorer 5.5+ */
+}
+
+.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0 .motto-container{
+    background: #22201B !important;
+    border-radius: 5px !important;
+    border: solid 1px #171717 !important;
+    box-shadow: 0px 3px 20px 10px #0000002b !important;
+    min-height: 28px !important;
+}
+
+.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0 .close {
+    color: white !important;
+    font-size: 14px !important;
+    border: 1px solid white !important;
+    padding: 3px !important;
+    border-radius: 3px !important;
+    background-color: #000 !important;
+}
+
+.nitro-room-infostand-component .d-flex.flex-column.align-items-end .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0.nohover .d-flex.flex-column.mt-2 .badge.badge-secondary.mb-0:not(.mt-2){
+    display: none !important;
+}
+
+.nitro-room-infostand-component .btn-group > .btn{
+    border-radius: 3px !important;
+    background: #22201B !important;
+    border: .1px solid #ffffff1a !important;
+    font-size: 13px !important;
+    margin: 2px !important;
+    box-shadow: 0px 3px 20px 10px #0000002b !important;
+}
+
+.nitro-room-infostand-component .btn-group > .btn:hover{
+    background: #22201BA1 !important;
+}
+
+/* CAMPANHIA */
+.nitro-room-doorbell {
+    background-color: #dfdfdf !important;
+    user-select: none !important;
+    border-radius: 5px !important;
+    overflow: hidden !important;
+    font-family: sans-serif !important;
+}
+.nitro-room-doorbell .d-flex.flex-column.p-3
+{
+    max-height: 200px!important;
+
+}
+.nitro-room-doorbell .drag-handler {
+    padding: 5px !important;
+    width: 100% !important; 
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295 !important;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    cursor: pointer !important;
+}
+
+.nitro-room-doorbell .drag-handler h6 {
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.nitro-room-doorbell .btn {
+    max-height: 35px !important;
+}
+
+.nitro-room-doorbell .btn.btn-secondary {
+    background: #1e7295 !important;
+    border: 0 !important;
+    box-shadow: 0 0 0 0 !important;
+    margin: 2px !important;
+    border-radius: 5px !important;
+}
+
+.nitro-room-doorbell .btn.btn-success {
+    border: 0 !important;
+    background: #009c2e !important;
+    border-top: solid 4px #0abd1e !important;
+    border-bottom: solid 4px #06872c !important;
+    border-radius: 5px !important;
+    margin: 2px !important;
+    width: 70px !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.nitro-room-doorbell .btn-danger {
+    border: 0 !important;
+        background: #F44336 !important;
+    border-top: solid 4px #f5564a !important;
+    border-bottom: solid 4px #d64338 !important;
+    border-radius: 5px !important;
+    margin: 2px !important;
+    width: 70px !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.nitro-room-doorbell .btn-danger:hover{
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.2) !important;
+}
+.nitro-room-doorbell .btn.btn-success:hover {
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.2) !important;
+}
+
+/* CENTER MODAL */
+
+.modal-dialog.modal-dialog-centered.modal-sm>.modal-content{
+    background-color: #dfdfdf !important;
+    user-select: none !important;
+    border-radius: 5px !important;
+    overflow: hidden !important;
+    font-family: sans-serif !important;
+    color: #000000a8 !important;
+}
+.modal-dialog.modal-dialog-centered.modal-sm>.modal-content>div>.modal-header .close {
+    padding: 0 !important;
+}
+.modal-dialog.modal-dialog-centered.modal-sm>.modal-content>div>.modal-header {
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295 !important;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    padding: 5px !important;
+}
+
+
+.modal-dialog.modal-dialog-centered.modal-sm>.modal-content .btn.btn-secondary {
+    border: 0 !important;
+        background: #F44336 !important;
+    border-top: solid 4px #f5564a !important;
+    border-bottom: solid 4px #d64338 !important;
+    border-radius: 5px !important;
+    margin: 2px !important;
+    box-shadow: 0 0 0 0 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.modal-dialog.modal-dialog-centered.modal-sm>.modal-content .btn-primary {
+    border: 0 !important;
+    background: linear-gradient(to bottom, #1e7295 80%, #196584 20%) !important;
+    border-radius: 5px !important;
+    margin: 2px !important;
+    box-shadow: 0 0 0 0 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.modal-dialog.modal-dialog-centered.modal-sm>.modal-content .btn-secondary:hover{
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2) !important;
+}
+.modal-dialog.modal-dialog-centered.modal-sm>.modal-content .btn.btn-primary:hover {
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2) !important;
+}
+
+/* NOTIFICAÇÃO */
+
+.nitro-notification-dialog,.nitro-notification-dialog-message{display:none!important;width:0!important;height:0!important;padding:0!important}
+
+/* AVATAR EDITOR */
+
+.nitro-avatar-editor {
+    font-family: Sans-serif!important;
+    background: url('https://i.imgur.com/X8ntlw8.png') 0 -4px repeat-x, #dfdfdf !important;
+    box-shadow: inset 0px 5px 0px 0px #c1c1c1f0 !important;
+}
+.nitro-avatar-editor .drag-handler {
+    padding: 5px !important;
+    width: 100% !important; 
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295 !important;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    cursor: pointer !important;
+} 
+
+.nitro-avatar-editor .drag-handler h6 {
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.nitro-avatar-editor .btn-group .btn.btn-secondary:not(.justify-content-center) {
+    padding: 8px !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    box-shadow: inset 0px 4px 0px 0px #c2c9d1 !important;
+    background: linear-gradient(to bottom,#b6bec5 50%,#b0b8bf 50%) !important;
+    cursor: pointer !important;
+    font-size: 12px !important;
+    width: auto !important;
+    text-align: center !important;
+    border-radius: 5px 5px 0px 0px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+}
+
+.nitro-avatar-editor .btn-group .btn:not(:disabled):not(.disabled):active, .nitro-avatar-editor .btn-group .btn:not(:disabled):not(.disabled).active {
+    box-shadow: rgb(255, 255, 255) -1px 3px 0px 0px inset !important;
+    background: linear-gradient(rgb(227, 227, 227) 50%, rgb(223, 223, 223) 50%) !important;
+}
+
+.nitro-avatar-editor .btn-group .btn:hover {
+    background-color: #ADB5BC !important;
+    box-shadow: inset 0px 4px 0px 0px rgba(255, 255, 255, 0.5) !important;
+}
+
+.nitro-avatar-editor .btn-group .btn-secondary.justify-content-center {
+background: #96999fa6 !important;
+    border: 0 !important;
+    border-top: solid 1px #788696b0 !important;
+    border-bottom: solid 1px #788696b0  !important;
+    box-shadow: 0px 0px 1px 1px #ffffff2e !important;
+    border-radius: 5px !important;
+    margin: 2px !important;
+}
+
+.nitro-avatar-editor .btn-group .btn-secondary.justify-content-center:hover {
+    background: #ADB5BC !important;
+}
+
+.nitro-avatar-editor .female-icon {
+    background-image: url('https://i.imgur.com/oOEeYqk.png') !important;
+}
+
+.nitro-avatar-editor .male-icon {
+    background-image: url('https://i.imgur.com/juWa9fj.png') !important;
+}
+
+.nitro-avatar-editor .btn-sm.btn-success {
+    border: 0 !important;
+    box-shadow: 0px 0px 20px 0px #0000000f !important;
+    background: #009c2e !important;
+    border-top: solid 4px #0abd1e !important;
+    border-bottom: solid 4px #06872c !important;
+    border-radius: 5px !important;
+}
+
+.nitro-avatar-editor .btn-sm.btn-success:hover {
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.2) !important;
+}
+
+.nitro-avatar-editor .grid-container.palette-grid .grid-items .item-detail .detail-info{
+    border-radius: 4px !important;
+    border: 1px solid rgba(0,0,0,0.7);
+    width: 20px !important;
+    margin: 1px !important;
+}
+
+.nitro-avatar-editor .grid-container.palette-grid .grid-items .item-detail .detail-info:hover{
+   border: 2px solid rgba(0,0,0,1);
+}
+
+.nitro-avatar-editor .grid-container.palette-grid .grid-items .item-detail .detail-info.active{
+    border: 2px solid rgba(0,0,0,1);
+    border-radius: 5px !important;
+}
+
+.nitro-avatar-editor .item-detail,.nitro-avatar-editor .btn.btn-secondary {
+    background-color: #788696b0 !important;
+    border-radius: 5px !important;
+    border: solid 1px #cacaca !important;
+}
+
+.nitro-avatar-editor .btn.btn-secondary.active {
+    background-color: #96999fa6 !important;
+    border: solid 2px #cacaca !important;
 }
