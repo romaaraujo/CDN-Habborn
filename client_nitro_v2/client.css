@@ -617,42 +617,6 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     height: 30px !important;
 }
 
-/* TROFÃ‰U */
-
-.nitro-trophy {
-    background-color: #ECC547 !important;
-    color: black !important;
-    width: 340px !important;
-    max-width: 340px !important;
-    font-size: 14px !important;;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255, 0.6)!important;
-    border: 1px solid black!important;
-}
-
-.nitro-trophy .fas{
-    color: black ;
-}
-
-.nitro-trophy .justify-content-between:not(.drag-handler) {
-    font-weight: bold !important;
-    border-top: 1px solid rgba(0,0,0, 0.5) !important;
-    margin-bottom: -20px !important;
-    font-size: 14px !important;
-}
-
-.nitro-trophy .drag-handler h6 {
-    text-align: center !important;
-    width: 100% !important;
-    font-weight: bold !important;
-    font-size: 15px !important;
-    cursor: pointer !important;
-}
-
-.nitro-trophy .close {
-    color: white !important;
-    font-size: 15px !important;
-}
-
 /* HC BAR */
 
 .nitro-purse-component .col.item-detail.btn.btn-primary.rounded.d-flex.nohover + .col.item-detail.btn.btn-primary.rounded.d-flex.nohover + .col.item-detail.btn.btn-primary.rounded.d-flex.nohover + .col.item-detail.btn.btn-primary.rounded.d-flex.nohover+ .col.item-detail.btn.btn-primary.rounded.d-flex.nohover {
