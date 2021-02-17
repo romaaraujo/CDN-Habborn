@@ -852,16 +852,11 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
 
 /* CARREGAMENTO */
 
-.nitro-loading-component .logo {
+.nitro-loading .logo {
     background: url(//i.imgur.com/NtSYrEM.png) no-repeat center !important;
     width: 331px !important;
     height: 449px !important;
 }
-
-.progress-container.loading-bar.bar {
-    background-color: #ca9605 !important;
-}
-
 
 
 .nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0{
