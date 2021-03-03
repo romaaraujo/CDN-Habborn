@@ -10,7 +10,7 @@ ROMA#8361
 
 /* BOTÃƒO CLOSE */
 
-.nitro-user-profile-component .drag-handler .close, .nitro-friendlist .drag-handler .close, .nitro-navigator-roomsettings-component > .header-draggable .close, .nitro-navigator-room-info .close, .nitro-chat-history-component .close, .nitro-avatar-editor .close,.modal-dialog.modal-dialog-centered.modal-sm>.modal-content>div>.modal-header .close,.nitro-navigator .close,.nitro-catalog-confirm-purchase-component .header-draggable .close, .nitro-room-doorbell .close, .nitro-catalog-confirm-purchase-component .drag-handler .close, .nitro-inventory .close, .nitro-navigator .close, [nitro-navigator-room-creator-component] .close, .nitro-catalog .close {
+.nitro-group-manager-component .close, .nitro-group-info-component .close, [nitro-group-creator-component] .close, .nitro-user-profile-component .drag-handler .close, .nitro-friendlist .drag-handler .close, .nitro-navigator-roomsettings-component > .header-draggable .close, .nitro-navigator-room-info .close, .nitro-chat-history-component .close, .nitro-avatar-editor .close,.modal-dialog.modal-dialog-centered.modal-sm>.modal-content>div>.modal-header .close,.nitro-navigator .close,.nitro-catalog-confirm-purchase-component .header-draggable .close, .nitro-room-doorbell .close, .nitro-catalog-confirm-purchase-component .drag-handler .close, .nitro-inventory .close, .nitro-navigator .close, [nitro-navigator-room-creator-component] .close, .nitro-catalog .close {
     position: relative !important;
     float: right !important;
     width: 24px !important;
@@ -23,7 +23,7 @@ ROMA#8361
     opacity: 1 !important;
 }
 
-.nitro-user-profile-component .drag-handler .close:hover,.nitro-friendlist .drag-handler .close:hover, .nitro-navigator-roomsettings-component > .header-draggable .close:hover, .nitro-navigator-room-info .close:hover, .nitro-chat-history-component .close:hover, .nitro-avatar-editor .close:hover,.modal-dialog.modal-dialog-centered.modal-sm>.modal-content>div>.modal-header .close:hover,.nitro-navigator .close:hover,.nitro-catalog-confirm-purchase-component .header-draggable .close:hover,.nitro-room-doorbell .close:hover,.nitro-catalog-confirm-purchase-component .drag-handler .close:hover, .nitro-inventory .close:hover, .nitro-navigator .close:hover, [nitro-navigator-room-creator-component] .close:hover, .nitro-catalog .close:hover{
+.nitro-group-manager-component .close:hover, .nitro-group-info-component .close:hover, [nitro-group-creator-component] .close:hover, .nitro-user-profile-component .drag-handler .close:hover,.nitro-friendlist .drag-handler .close:hover, .nitro-navigator-roomsettings-component > .header-draggable .close:hover, .nitro-navigator-room-info .close:hover, .nitro-chat-history-component .close:hover, .nitro-avatar-editor .close:hover,.modal-dialog.modal-dialog-centered.modal-sm>.modal-content>div>.modal-header .close:hover,.nitro-navigator .close:hover,.nitro-catalog-confirm-purchase-component .header-draggable .close:hover,.nitro-room-doorbell .close:hover,.nitro-catalog-confirm-purchase-component .drag-handler .close:hover, .nitro-inventory .close:hover, .nitro-navigator .close:hover, [nitro-navigator-room-creator-component] .close:hover, .nitro-catalog .close:hover{
     opacity: 0.9 !important;
 }
 
@@ -357,7 +357,7 @@ div[nitro-navigator-room-creator-component] .detail-info:focus, div[nitro-naviga
      box-shadow: 0 0 0 0 !important;
      color: #000000a8;
  }
-.nitro-catalog .col-12 .btn-group .btn-secondary,.nitro-catalog .col-12 .btn-group .btn-secondary:not(:disabled):not(.disabled):active, .nitro-catalog .col-12 .btn-group .btn-secondary:not(:disabled):not(.disabled).active {
+.nitro-catalog > .d-flex > .btn-group .btn{
     padding: 8px !important;
     margin-left: 1px !important;
     margin-right: 1px !important;
@@ -373,27 +373,36 @@ div[nitro-navigator-room-creator-component] .detail-info:focus, div[nitro-naviga
     border: 0 !important;
 }
 
-.nitro-catalog .col-12 .btn-group .btn-secondary:not(:disabled):not(.disabled).active {
+.nitro-catalog > .d-flex > .btn-group .btn.active {
     box-shadow: rgb(255, 255, 255) -1px 3px 0px 0px inset !important;
     background: linear-gradient(rgb(227, 227, 227) 50%, rgb(223, 223, 223) 50%) !important;
 }
 
-.nitro-catalog .col-12 .btn-group .btn-secondary:hover {
+.nitro-catalog > .d-flex > .btn-group .btn:hover {
     background-color: #ADB5BC !important;
     box-shadow: inset 0px 4px 0px 0px rgba(255, 255, 255, 0.5) !important;
 }
-.nitro-catalog .col-12 .input-group .btn-secondary, .nitro-catalog .input-group .btn-secondary:active{
-    height: 30px !important;
-    font-size: 14px !important;
-    color: rgba(0, 0, 0, 0.87) !important;
-    background: rgb(249, 249, 249) !important;
-    border: 1px solid rgb(149, 149, 149) !important;
-    border-radius: 3px 0px 0px 3px !important;
-    padding: 9px 30px !important;
-    box-shadow: rgb(236, 236, 236) 0px 5px 0px 0px inset !important;
-    filter: drop-shadow(0px 3px 0px #0000001a) !important;
-    outline: 0 !important;
-    border-right: 0 !important;
+.nitro-catalog .nitro-catalog-navigation-component .btn-group input.bg-secondary{
+    border: 0 !important;
+    border-top: solid 4px #4587ab !important;
+    background-color: #4587ab !important;
+    box-shadow: 0px 0px 0px 0px #00000030 !important;
+    font-family: Sans-serif !important;
+    font-weight: bold !important;
+    border-bottom: solid 4px #134561 !important;
+    color: white !important;  
+
+}
+.nitro-catalog .nitro-catalog-navigation-component .btn-group input::placeholder{
+    color: white !important;  
+    font-weight: 400;
+}
+
+.nitro-catalog .btn-group > .btn-success:hover{
+    opacity: .9 !important;
+}
+.nitro-catalog .d-flex.w-100 > .btn-group > .btn-secondary:hover{
+    opacity: .9 !important;
 }
 
 .nitro-catalog > .nitro-catalog-navigation-component{
@@ -439,7 +448,10 @@ div[nitro-navigator-room-creator-component] .detail-info:focus, div[nitro-naviga
 .nitro-catalog .bg-secondary:not(.m-2.p-2){ 
     background: transparent !important;
 }
-
+.nitro-catalog .quantity-area, .nitro-catalog .price-area{
+  color: black !important;
+font-weight: bold !important;
+}
 .nitro-catalog .nitro-catalog-layout-spaces-component .btn-group.mt-2 .btn{
     background: #286587 !important;
     margin: 2px !important;
@@ -515,17 +527,13 @@ div[nitro-navigator-room-creator-component] .detail-info:focus, div[nitro-naviga
     border-radius: 5px !important;
     border-bottom: solid 4px #06872c !important;
 }
-.nitro-catalog .btn-group > .btn-secondary{
+.nitro-catalog .d-flex.w-100 > .btn-group > .btn-secondary{
     background: #286587 !important;
     border: 0 !important;
     border-radius: 5px !important;
     box-shadow: 0 0 0 0 !important;
     border-top: solid 4px #4587ab !important;
     border-bottom: solid 4px #134561 !important;
-}
-
-.nitro-catalog .btn-group > .btn-secondary:hover, .nitro-catalog .btn-group > .btn-success:hover{
-    box-shadow: 0 3px 0 0 #00000030 !important;
 }
 
 .nitro-catalog .icon-currency-103{background-image:url("//habborn.biz/assets/images/wallet/icons/103.png") !important;width:15px;height:15px}
@@ -717,9 +725,39 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     box-shadow: rgb(255, 255, 255) -1px 3px 0px 0px inset !important;
     background: linear-gradient(rgb(227, 227, 227) 50%, rgb(223, 223, 223) 50%) !important;
 }
+.nitro-inventory .btn-group .btn:not(:disabled):not(.disabled):hover
+{
+    background-color: #ADB5BC !important;
+    box-shadow: inset 0px 4px 0px 0px rgba(255, 255, 255, 0.5) !important;
+}
 
 .nitro-inventory .room-preview {
     background-color: #000000 !important;
+}
+
+.nitro-inventory .col-12.bg-secondary.rounded {
+    box-shadow: inset 0px 4px 0px 0px #c2c9d1 !important;
+    background: linear-gradient(to bottom,#b6bec5 50%,#b0b8bf 50%) !important;
+    border-radius: 0 !important;
+    text-align: center !important;
+}
+
+.nitro-inventory .col-12.bg-secondary.rounded .btn {
+    font-size: 14px !important;
+    background: #286587 !important;
+    margin: 2px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+    margin: 2px !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+}
+
+.nitro-inventory .col-12.bg-secondary.rounded .btn:hover {
+opacity: 0.9 !important;
 }
 
 .nitro-inventory .drag-handler h6 {
@@ -745,7 +783,45 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     border-radius: 5px !important;
 }
 
+.nitro-inventory [nitro-inventory-bots-component], .nitro-inventory [nitro-inventory-badges-component]{
+    color: #000 !important;
+}
+
+.nitro-inventory [nitro-inventory-furniture-component] .btn-group-vertical .btn-secondary:hover{ 
+    opacity: .9 !important;
+}
+.nitro-inventory [nitro-inventory-furniture-component] .btn-group-vertical .btn-secondary {
+    font-size: 14px !important;
+    background: #286587 !important;
+    margin: 2px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+    margin: 2px !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+}
+.nitro-inventory [nitro-inventory-bots-component] .btn-group-vertical .btn-secondary:hover{ 
+    opacity: .9 !important;
+}
+.nitro-inventory [nitro-inventory-bots-component] .btn-group-vertical .btn-secondary {
+    font-size: 14px !important;
+    background: #286587 !important;
+    margin: 2px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+    margin: 2px !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+}
+
 .nitro-inventory .btn.detail-info  {
+    background-color: rgba(0,0,0, 0.1) !important;
     margin: 0px !important;
 }
 
@@ -762,20 +838,7 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     background-color: #367897 !important;
 }
 
-.nitro-inventory .col-5 .btn {
-    border: 0 !important;
-    background: #286587 !important;
-    margin-top: 7px !important;
-    border-top: solid 4px #4587ab !important;
-    border-bottom: solid 4px #134561 !important;
-    border-radius: 4px !important;
-    box-shadow: 0px 0px 0px 0px #00000030 !important;
-    font-size: 14px !important;
-    font-weight: bold !important;
-    font-family: Sans-serif !important;
-    margin: 0 !important;
-    padding: 5px !important;
-}
+
 
 .nitro-inventory .col-5 .btn:hover {
     background-color: #2b6079 !important;
@@ -852,12 +915,13 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
 
 /* CARREGAMENTO */
 
-.nitro-loading .logo {
+.logo {
     background: url(//i.imgur.com/NtSYrEM.png) no-repeat center !important;
     width: 331px !important;
     height: 449px !important;
 }
 
+/* INFOSTAND */
 
 .nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0{
     font-family: Ubuntu, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
@@ -1194,6 +1258,20 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
 }
 .nitro-avatar-editor .d-flex.no-gutters.mt-1.ng-star-inserted div{
     margin: 0 !important;
+}
+
+.nitro-avatar-editor .nitro-avatar-wardrobe-component .btn{
+    border: 0 0 0 !important;
+    border: solid 1px #000 !important;
+    margin: 1px !important;
+    box-shadow: 0 0 0 0 !important;
+    background: #ADB5BC !important;
+}
+.nitro-avatar-editor .nitro-avatar-wardrobe-component .btn.h-100{
+    background: #1e7295 !important;
+}
+.nitro-avatar-editor .nitro-avatar-wardrobe-component .btn:hover {
+    opacity: 0.5 !important;
 }
 
 /* ROOM BOX */
@@ -1814,8 +1892,369 @@ i.icon.icon-nitro-light, i.icon.icon-nitro-dark {
     display: none !important;
 }
 
-/* BUBBLE CHAT */
+/* GRUPOS */
+div[nitro-group-creator-component]{
+    background-color: #dfdfdf !important;
+    user-select: none !important;
+    border-radius: 5px !important;
+    overflow: hidden !important;
+    font-family: sans-serif !important;
+    color: #000000;
+}
 
-.bubble-container .chat-bubble .user-container .user-image {
-    transform: scale(0.6) !important;
+[nitro-group-creator-component] > div > .d-flex {
+    padding: 5px !important;
+    width: 100% !important;
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    cursor: pointer !important;
+    font-size: 14px !important;
+}
+[nitro-group-creator-component] > div > .d-flex > h6
+{
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+
+[nitro-group-creator-component] select, [nitro-group-creator-component] input, [nitro-group-creator-component] textarea {
+        color: #000000d6 !important;
+    background: #f9f9f9 !important;
+    border: solid 1px #464646 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0px 5px 0px 0px #0000000d !important;
+    width: 100% !important;
+    resize: none !important;
+    padding: 7px 4px 4px 4px !important;
+    font-family: Arial !important;
+    top: 3px !important;
+    position: relative !important;
+    margin-bottom: 10px !important;
+}
+
+[nitro-group-creator-component] .p-3 > .btn-group .btn {
+        padding: 8px !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    box-shadow: inset 0px 4px 0px 0px #c2c9d1 !important;
+    background: linear-gradient(to bottom,#b6bec5 50%,#b0b8bf 50%) !important;
+    cursor: pointer !important;
+    width: auto !important;
+    text-align: center !important;
+    border-radius: 5px 5px 0px 0px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border: 0 !important;
+    font-size: 14px !important;
+}
+
+[nitro-group-creator-component] .p-3 > .btn-group .btn:disabled:hover{
+    background-color: #ADB5BC !important;
+    box-shadow: inset 0px 4px 0px 0px #ADB5BC !important;
+}
+[nitro-group-creator-component] .d-flex.flex-row.justify-content-between:not(.mb-3) > .btn.btn-secondary{
+    border: 0 !important;
+    background: #F44336 !important;
+    border-top: solid 4px #f5564a !important;
+    border-bottom: solid 4px #d64338 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    font-weight: bold !important;
+}
+[nitro-group-creator-component] .d-flex.flex-row.justify-content-between:not(.mb-3) > .btn.btn-primary
+{
+    border: 0 !important;
+    background: #286587 !important;
+    margin-top: 7px !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+    border-radius: 4px !important;
+    box-shadow: 0px 0px 0px 0px #00000030 !important;
+
+    font-weight: bold !important;
+    font-family: Sans-serif !important;
+    margin: 0 !important;
+}
+
+[nitro-group-creator-component] .d-flex.flex-row.justify-content-between:not(.mb-3) .btn.btn-secondary:hover, [nitro-group-creator-component] .d-flex.flex-row.justify-content-between:not(.mb-3) .btn.btn-primary:hover {
+opacity: 0.9 !important;
+}
+
+.nitro-group-room-info-component {
+    border-radius: 5px !important;
+}
+.nitro-group-room-info-component > .card > .d-flex {
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+.nitro-group-room-info-component > div {
+    background-color: #dfdfdf !important;
+    color: #000 !important;
+    padding: 0 !important;
+    margin: 0 !important; 
+    border-radius: 10px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+
+}
+.nitro-group-room-info-component > .card > .d-flex{
+    border: 1px solid black !important;
+    border-radius: 5px !important;
+}
+.nitro-group-room-info-component > .card{
+    border: none !important;
+}
+.nitro-group-room-info-component > .card > .d-flex > .d-flex.flex-row {
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295 !important;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14 !important;
+    cursor: pointer !important;
+    padding: 5px !important;
+    border-top-left-radius: 5px !important;  
+    border-top-right-radius: 5px !important;
+}
+
+
+.nitro-group-room-info-component img {
+    padding-left: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.nitro-group-info-component > .card.header-draggable{
+    background-color: #dfdfdf !important;
+    color: #000 !important;
+    padding: 0 !important;
+    margin: 0 !important; 
+    border-radius: 10px !important;
+}
+
+.nitro-group-info-component > .card.header-draggable .drag-handler {
+    border-top-right-radius:  5px!important;
+    border-top-left-radius:  5px!important;
+    padding: 5px !important;
+    width: 100% !important;
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    cursor: pointer !important;
+}
+.nitro-group-info-component > .card.header-draggable .drag-handler  h6 {
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+
+.nitro-group-room-info-component .btn-success.btn-block.btn-sm {
+    background: #009c2e !important;
+    margin-top: 7px !important;
+    border: 0 !important;
+    border-top: solid 2px #0abd1e !important;
+    border-bottom: solid 2px #06872c !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    box-shadow: 0px 0px 0px 0px !important;
+}
+
+.nitro-group-room-info-component .btn.btn-primary.disabled{
+    background: #286587 !important;
+    border: 0 !important;
+    box-shadow: 0 0 0 0 !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+    font-size: 14px !important;
+}
+
+.nitro-group-room-info-component .btn-success.btn-block.btn-sm:hover {
+    opacity: .9 !important;
+}
+
+nitro-group-info-component .btn-success {
+    background: #009c2e !important;
+    margin-top: 7px !important;
+    border: 0 !important;
+    border-top: solid 2px #0abd1e !important;
+    border-bottom: solid 2px #06872c !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    box-shadow: 0px 0px 0px 0px !important;
+}
+
+nitro-group-info-component .btn-success:hover {
+    opacity: .9 !important;
+}
+nitro-group-info-component .btn-primary{
+    background: #286587 !important;
+    margin: 2px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+}
+
+nitro-group-info-component .btn-primary:hover {
+    opacity: .9 !important;
+}
+
+nitro-group-info-component .btn-danger{
+    border: 0 !important;
+    background: #F44336 !important;
+    border-top: solid 4px #f5564a !important;
+    border-bottom: solid 4px #d64338 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    font-size: 14px !important;
+}
+
+nitro-group-info-component .btn-danger:hover {
+    opacity: .9 !important;
+}
+
+.nitro-group-manager-component > div {
+    background-color: #dfdfdf !important;
+    color: black !important;
+}
+
+.nitro-group-manager-component .btn-danger {
+    margin: 2px !important;
+    border: 0 !important;
+    background: #F44336 !important;
+    border-top: solid 4px #f5564a !important;
+    border-bottom: solid 4px #d64338 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    font-size: 14px !important;
+}
+.nitro-group-manager-component .btn-success {
+    background: #009c2e !important;
+    margin-top: 7px !important;
+    border: 0 !important;
+    border-top: solid 2px #0abd1e !important;
+    border-bottom: solid 2px #06872c !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    box-shadow: 0px 0px 0px 0px !important;
+}
+
+.nitro-group-manager-component .btn-secondary {
+    margin: 2px !important;
+    background: #286587 !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+    font-size: 14px !important;
+}
+
+.nitro-group-manager-component .btn-danger:hover,.nitro-group-manager-component .btn-success:hover, .nitro-group-manager-component .btn-secondary:hover {
+    opacity: .9 !important;
+}
+
+.nitro-group-manager-component input[type="text"], .nitro-group-manager-component textarea {
+    color: #000000d6 !important;
+    background: #f9f9f9 !important;
+    border: solid 1px #464646 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0px 5px 0px 0px #0000000d !important;
+    width: 100% !important;
+    resize: none !important;
+    padding: 7px 4px 4px 4px !important;
+    font-family: Arial !important;
+    top: 3px !important;
+    position: relative !important;
+    margin-bottom: 10px !important;
+}
+
+.nitro-group-manager-component .drag-handler {
+        border-top-right-radius:  5px!important;
+    border-top-left-radius:  5px!important;
+    padding: 5px !important;
+    width: 100% !important;
+    color: #ffffffe6 !important;
+    text-align: center !important;
+    background: #1e7295;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    cursor: pointer !important;
+    font-size: 14px !important;
+}
+
+.nitro-group-manager-component .drag-handler > h6 {
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+
+.nitro-group-manager-component .p-3 > .btn-group.mb-3.w-100 > .btn {
+    background: linear-gradient(to bottom,#323232d6 10%,#1d1e21d6 10%) !important;
+    width: 29 !important;
+    height: 29 !important;
+    padding: 0 !important;
+    border: solid 1px #131313f0 !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    float: left !important;
+    margin-right: 7px !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.nitro-group-manager-component .p-3 > .btn-group.mb-3.w-100 > .btn.active{
+    background-color: #323232 !important; 
+}
+
+.nitro-group-manager-component .p-3 > .btn-group.mb-3.w-100 > .btn:not(.active):hover {
+    background-color: #1d1e21d6 !important; 
+}
+
+/* ALERT GENERIC COMPONENT */
+.nitro-alert-generic-component {
+    background-color: #dfdfdf !important;
+    color: black !important;
+}
+.nitro-alert-generic-component .header-draggable
+{
+    border-top-right-radius:  5px!important;
+    border-top-left-radius:  5px!important;
+    padding: 5px !important;
+    width: 100% !important;
+    color: #ffffffe6 !important;
+    background: #1e7295;
+    box-shadow: inset 0px 3px 0px 0px #ffffff14;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    font-family: Sans-serif !important;
+}
+
+.nitro-alert-generic-component .btn-danger {
+    margin: 5px !important;
+    border: 0 !important;
+    background: #F44336 !important;
+    border-top: solid 4px #f5564a !important;
+    border-bottom: solid 4px #d64338 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    font-size: 14px !important;
+}
+
+.nitro-alert-generic-component .btn-primary {
+    margin: 5px !important;
+    background: #286587 !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 0 0 !important;
+    border-top: solid 4px #4587ab !important;
+    border-bottom: solid 4px #134561 !important;
+    font-size: 14px !important;
+}
+
+.nitro-alert-generic-component .btn:hover {
+    opacity: .9 !important;
+    
 }
