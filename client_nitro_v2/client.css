@@ -923,7 +923,13 @@ opacity: 0.9 !important;
 
 /* INFOSTAND */
 
-.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0{
+.nitro-room-infostand-component .body-image {
+    background: #22201Ba1 !important;
+    box-shadow: inset 0px 0px 0px 2px #34322C !important;
+    border: 1.5px solid #000 !important;
+    border-radius: 3px !important;
+}
+.nitro-room-infostand-component .card{
     font-family: Ubuntu, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
     background: rgba(34,32,27,0.9) !important;
     border-radius: 5px !important;
@@ -931,18 +937,42 @@ opacity: 0.9 !important;
     box-shadow: 0px 3px 20px 10px #0000002b !important;
     animation: fadeInRight 1s !important;
 }
-.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0{
-    text-align: center !important;
-    color: #fff !important;
-    text-shadow: 2px 2px 4px #000000b0 !important;
-    font-size: 14px !important;
+
+.nitro-room-infostand-component .card .d-flex.justify-content-between.align-items-center.px-3.pt-3{
+    text-align: center !important
+}
+
+.nitro-room-infostand-component h6 {
+    font-size: 16px !important;
+}
+
+.nitro-room-infostand-component .motto-container {
+    background: #22201B !important;
     border-radius: 5px !important;
-    font-weight: bold !important;
+    border: solid 1px #171717 !important;
+    box-shadow: 0px 3px 20px 10px #0000002b !important;
+    min-height: 28px !important;
+    border-radius: 3px !important;
 }
-.nitro-room-infostand-component .d-flex.align-items-center .badge {
-    padding: 1 !important;
-    margin: 0 !important;
+
+.nitro-room-infostand-component .motto-container > span {
+font-size: 13px !important;
 }
+
+.nitro-room-infostand-component div.d-flex.flex-column.mt-2 > p{
+    background: #22201B !important;
+    border-radius: 5px !important;
+    border: solid 1px #171717 !important;
+    box-shadow: 0px 3px 20px 10px #0000002b !important;
+    min-height: 28px !important;
+    font-weight: 0 !important;
+    white-space: pre-wrap!important;       /* css-3 */
+    word-wrap: break-word!important;       /* Internet Explorer 5.5+ */
+    text-align: left !important;
+    font-size: 13px !important;
+    border-radius: 3px !important;
+}
+
 .nitro-room-infostand-component .fa-user {
     color: transparent!important;
     background-image:url(https://i.imgur.com/iR5fJEM.png) !important;
@@ -954,42 +984,13 @@ opacity: 0.9 !important;
     background-position: center !important;
 }
 
-.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0 .body-image{
-    background: #22201Ba1 !important;
-    box-shadow: inset 0px 0px 0px 2px #34322C !important;
-    border: 1.5px solid #000 !important;
-    border-radius: 5px !important;
-}
-.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0 .badge.badge-secondary.mb-0
-{
-    background: #22201B !important;
-    border: solid 1px #171717 !important;
-    box-shadow: 0px 3px 20px 10px #0000002b !important;
-    font-size: 13px !important;
-    text-align: left !important;
-    white-space: pre-wrap!important;       /* css-3 */
-    word-wrap: break-word!important;       /* Internet Explorer 5.5+ */
-}
-
-.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0 .motto-container{
-    background: #22201B !important;
-    border-radius: 5px !important;
-    border: solid 1px #171717 !important;
-    box-shadow: 0px 3px 20px 10px #0000002b !important;
-    min-height: 28px !important;
-}
-
-.nitro-room-infostand-component .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0 .close {
+.nitro-room-infostand-component .close {
     color: white !important;
     font-size: 14px !important;
     border: 1px solid white !important;
     padding: 4px !important;
     border-radius: 3px !important;
     background-color: #000 !important;
-}
-
-.nitro-room-infostand-component .d-flex.flex-column.align-items-end .infostand.d-flex.flex-column.btn.btn-primary.rounded.p-0.nohover .d-flex.flex-column.mt-2 .badge.badge-secondary.mb-0:not(.mt-2){
-    display: none !important;
 }
 
 .nitro-room-infostand-component .btn-group > .btn{
@@ -1002,7 +1003,7 @@ opacity: 0.9 !important;
 }
 
 .nitro-room-infostand-component .btn-group > .btn:hover{
-    background: #22201BA1 !important;
+    opacity: 0.9 !important;
 }
 
 /* CAMPANHIA */
