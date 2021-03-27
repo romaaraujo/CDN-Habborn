@@ -102,7 +102,7 @@ var liberado = false;
 function radioUpdate() {
     if (liberado) {
         liberado = false;
-        $.getJSON('https://idhabborn.com/inc/ajax/Status.php?op=View', function (data, success) {
+        $.getJSON('https://radio.habborn.club/status.php', function (data, success) {
             if (success) {
                 $('.locutor').html((data.Locutor).substr(0,16)).animate({width: 'toggle'});
                 $('.locutor').animate({width: 'toggle'});
