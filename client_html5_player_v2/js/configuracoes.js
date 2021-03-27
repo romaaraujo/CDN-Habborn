@@ -111,10 +111,10 @@ function radioUpdate() {
                 $('.programacao .scrolling').animate({width: 'toggle'});
                 var ouvintes = 0;
                 if (data.Unicos < 100) {
-                    ouvintes = "0" + data.Unicos
+                    ouvintes = "0" + data.UserOn
                 } else if (data.Unicos < 10) {
-                    ouvintes = "00" + data.Unicos
-                } else { ouvintes = data.Unicos };
+                    ouvintes = "00" + data.UserOn
+                } else { ouvintes = data.UserOn };
                 $('.ouvintes').html(ouvintes).animate({width: 'toggle'});
                 $('.ouvintes').animate({width: 'toggle'});
 
