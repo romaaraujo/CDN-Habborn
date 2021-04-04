@@ -5,7 +5,7 @@
 // SETTINGGS
 
 const player = {
-    audioUrl: "https://sonic.dedicado.stream/8048/;",
+    audioUrl: "https://sonic.dedicado.stream/8068/;",
     audio: null,
     volume: null,
     status: 0, //Default = 0 | Pause = 1 | Play = 2
